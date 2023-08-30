@@ -42,10 +42,32 @@
             border-radius: 12px;
         }
 
+        .outro {
+            margin-top: 300px;
+            margin-left: 14px;
+            margin-right: 14px;
+            padding: 17px;
+            border-radius: 12px;
+        }
+        
+
         .bg-container{
-            background-color: aquamarine;
             padding: 17px;
             margin: 14px;
+            display: grid;
+            gap: 20px;
+            height: 100vh;
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 400px 400px 400px;
+            column-gap: 50px;
+            row-gap: 50px;
+            align-content: start;
+        }
+
+        [class^="box-"]{
+            background-color: aquamarine;
+            display: grid;
+            place-items: center;
             border-radius: 20px;
         }
 
@@ -59,6 +81,7 @@
             <li><a href="#"><img src="{{ url_for('static', filename='fang.png') }}" /></a></li>
             <li><a href="#">MK</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#">projects</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </div>
@@ -81,15 +104,38 @@
                     iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
                      aliquid et?</p>
     </div>
+    <div style="text-align: center;"><h1>PROJECTS</h1></div>
        
     <div class="bg-container">
-        <table>
-
-        </table>
+        <div class="box-1">a</div>
+        <div class="box-2">b</div>
+        <div class="box-3">c</div>
+        <div class="box-4">d</div>
+        <div class="box-5">e</div>
+        <div class="box-6">f</div>
     </div>
-    <footer style="text-align: center;"> 
-        @MICKy
-    </footer>
+ <footer>
+
+    <div style="background-color: aquamarine;" class="outro">
+        <h1 style="text-align: center;">CONTACTS</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Aspernatur adipisci vel quidem, 
+            earum nam quos tenetur consectetur quisquam, 
+            iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
+             aliquid et?</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aspernatur adipisci vel quidem, 
+                earum nam quos tenetur consectetur quisquam, 
+                iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
+                 aliquid et?</p>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Aspernatur adipisci vel quidem, 
+                    earum nam quos tenetur consectetur quisquam, 
+                    iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
+                     aliquid et?</p>
+    </div>
+ </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
