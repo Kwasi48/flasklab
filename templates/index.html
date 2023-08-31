@@ -37,9 +37,11 @@
        
         
         .intro {
-            margin: 14px;
-            padding: 17px;
             border-radius: 12px;
+            background-color: aquamarine;
+            display: flex;
+            align-items: stretch;
+            margin: 40px;
         }
 
         .outro {
@@ -64,6 +66,12 @@
             align-content: start;
         }
 
+        .intro > div{
+           
+            margin: 40px;
+            padding: 50px;
+        }
+
         [class^="box-"]{
             background-color: aquamarine;
             display: grid;
@@ -78,33 +86,25 @@
     <div>
         
         <ul>
-            <li><a href="#"><img src="{{ url_for('static', filename='fang.png') }}" /></a></li>
-            <li><a href="#">MK</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='fangs.png') }}"  height="50px", width="50px" /></a></li>
+            <li><a href="#" style="font-size: 30px;">MK</a></li>
+            <li><a href="#outro" style="font-size: 30px;">CONTACT</a></li>
+            <li><a href="#pro" style="font-size: 30px;">PROJECTS</a></li>
+            <li><a href="#" style="font-size: 30px; padding-left: 700px;" >ABOUT</a></li>
         </ul>
     </div>
 
-    <div style="background-color: aquamarine;" class="intro">
-        <h1 style="text-align: center;">LOREM IPSUM</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Aspernatur adipisci vel quidem, 
-            earum nam quos tenetur consectetur quisquam, 
-            iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-             aliquid et?</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Aspernatur adipisci vel quidem, 
-                earum nam quos tenetur consectetur quisquam, 
-                iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-                 aliquid et?</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aspernatur adipisci vel quidem, 
-                    earum nam quos tenetur consectetur quisquam, 
-                    iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-                     aliquid et?</p>
+    <div  class="intro">
+     <div style="border-radius: 40px;"><img src="{{ url_for('static', filename='profile.jpg') }}"  height="300px", width="300px"/></div>
+     <div style="background-color: white; border-radius: 20px;"> 
+        <h1 style="font-size: 50px;">HI, THERE!</h1>
+        <p style="font-size: 35px; ">
+            This is mike somebody who is euthusiastic about web development. I will like you to check about my 
+            various projects and give me a ring or dm me on X if you need me for a project.
+        </p>
+     </div>
     </div>
-    <div style="text-align: center;"><h1>PROJECTS</h1></div>
+    <div style="text-align: center;" id="pro"><h1>PROJECTS</h1></div>
        
     <div class="bg-container">
         <div class="box-1">Robotics</div>
@@ -117,7 +117,7 @@
  <footer>
 
     <div style="background-color: aquamarine;" class="outro">
-        <h1 style="text-align: center;">CONTACTS</h1>
+        <h1 style="text-align: center;" id="outro">CONTACTS</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Aspernatur adipisci vel quidem, 
             earum nam quos tenetur consectetur quisquam, 
