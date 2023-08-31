@@ -45,11 +45,11 @@
         }
 
         .outro {
-            margin-top: 300px;
-            margin-left: 14px;
-            margin-right: 14px;
-            padding: 17px;
             border-radius: 12px;
+            
+            display: flex;
+            align-items: stretch;
+            margin: 200px;
         }
         
 
@@ -67,10 +67,15 @@
         }
 
         .intro > div{
-           
             margin: 40px;
             padding: 50px;
         }
+
+        .outro > div{
+            margin: 40px;
+            padding: 50px;
+        }
+        
 
         [class^="box-"]{
              
@@ -88,9 +93,9 @@
         <ul>
             <li><a href="#"><img src="{{ url_for('static', filename='fangs.png') }}"  height="50px", width="50px" /></a></li>
             <li><a href="#" style="font-size: 30px;">MK</a></li>
-            <li><a href="#outro" style="font-size: 30px;">CONTACT</a></li>
+            <li><a href="#con" style="font-size: 30px;">CONTACT</a></li>
             <li><a href="#pro" style="font-size: 30px;">PROJECTS</a></li>
-            <li><a href="#" style="font-size: 30px; padding-left: 700px;" >ABOUT</a></li>
+            <li><a href="#about" style="font-size: 30px; padding-left: 700px;" >ABOUT</a></li>
         </ul>
     </div>
 
@@ -134,23 +139,27 @@
     </div>
  <footer>
 
-    <div style="background-color: aquamarine;" class="outro">
-        <h1 style="text-align: center;" id="outro">CONTACTS</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Aspernatur adipisci vel quidem, 
-            earum nam quos tenetur consectetur quisquam, 
-            iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-             aliquid et?</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Aspernatur adipisci vel quidem, 
-                earum nam quos tenetur consectetur quisquam, 
-                iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-                 aliquid et?</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aspernatur adipisci vel quidem, 
-                    earum nam quos tenetur consectetur quisquam, 
-                    iure a veniam ipsum nemo beatae fugiat sint impedit recusandae
-                     aliquid et?</p>
+    <div class="outro">
+       <div id="con">
+        <h2 style="text-align: center;">CONTACT</h2>
+        <h3>
+            <table>
+                <tr>
+                    <td>
+                        X: @abubonsrah47
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Linkedln: Abu Michael Obeng
+                    </td>
+                </tr>
+            </table>
+        </h3>
+       </div>
+       <div id="about">
+        <h2 style="text-align: center;">ABOUT</h2>
+       </div>
     </div>
  </footer>
     
