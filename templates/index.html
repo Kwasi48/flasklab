@@ -73,7 +73,7 @@
         }
 
         [class^="box-"]{
-            background-color: aquamarine;
+             
             display: grid;
             place-items: center;
             border-radius: 20px;
@@ -107,12 +107,30 @@
     <div style="text-align: center;" id="pro"><h1>PROJECTS</h1></div>
        
     <div class="bg-container">
-        <div class="box-1">Robotics</div>
-        <div class="box-2">Internet of Things </div>
-        <div class="box-3">Web development </div>
-        <div class="box-4">Data Science</div>
-        <div class="box-5">Cyber Security</div>
-        <div class="box-6">Computer Graphics</div>
+        <div class="box-1"><img src="{{ url_for('static', filename='robo.jpg') }}"  height="300px", width="300px" />
+            <h2>
+                ROBOTICS
+            </h2></div>
+        <div class="box-2"><img src="{{ url_for('static', filename='iot.jpg') }}"  height="300px", width="300px" />
+            <h2>
+                INTERNET OF THINGS
+            </h2></div>
+        <div class="box-3"><img src="{{ url_for('static', filename='webdev.jpg') }}"  height="300px", width="300px" />
+        <h2>
+            WEB DEVELOPMENT
+        </h2></div>
+        <div class="box-4"><img src="{{ url_for('static', filename='data.png') }}"  height="300px", width="300px" />
+            <h2>
+                DATA SCIENCE
+            </h2></div>
+        <div class="box-5"><img src="{{ url_for('static', filename='cy.jpg') }}"  height="300px", width="300px" />
+            <h2>
+                CYBER SECURITY
+            </h2></div>
+        <div class="box-6"><img src="{{ url_for('static', filename='gra.png') }}"  height="300px", width="300px" />
+            <h2>
+                COMPUTER GRAPHICS
+            </h2></div>
     </div>
  <footer>
 
